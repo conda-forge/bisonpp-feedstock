@@ -11,8 +11,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: true  # [not linux]
+  number: 1
+  skip: true  # [win]
 requirements:
   build:
     - {{ compiler('cxx') }}
@@ -25,7 +25,7 @@ about:
   home: https://github.com/jarro2783/bisonpp
   license: GPL-2.0
   license_family: GPL
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
   summary: 'The original bison++ project, brought up to date with modern compilers'
 
   description: |
