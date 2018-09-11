@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./configure --prefix=$PREFIX bison++-1.21
+./configure --prefix=$PREFIX
  
 make
 make install
