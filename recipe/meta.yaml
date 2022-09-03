@@ -13,9 +13,11 @@ source:
 build:
   number: 1003
   skip: true  # [win]
+
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - make   # [unix]
 
 test:
   commands:
@@ -29,11 +31,11 @@ about:
   summary: 'The original bison++ project, brought up to date with modern compilers'
 
   description: |
-    bisonpp was created from bison by A. Coetmeur in the 1990s. 
-    This program provided seamless integration with C++, allowing developers 
-    to code actions in C++ and embed a parser and scanner within a class 
+    bisonpp was created from bison by A. Coetmeur in the 1990s.
+    This program provided seamless integration with C++, allowing developers
+    to code actions in C++ and embed a parser and scanner within a class
     by private inheritance. The latter capability allows multiple scanners a
-    nd parsers to be used within a single program, 
+    nd parsers to be used within a single program,
     something that is difficult with bison.
   doc_url: https://code.google.com/archive/p/flexpp-bisonpp/wikis/WikiSourceCode.wiki
   dev_url: https://github.com/jarro2783/bisonpp
